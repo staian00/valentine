@@ -52,12 +52,11 @@
 
         .buttons-container {
             margin-top: 40px;
-            display: flex;
+            display: inline-flex;
             gap: 20px;
             justify-content: center;
             align-items: center;
             position: relative;
-            min-height: 80px;
         }
 
         button {
@@ -69,6 +68,7 @@
             transition: all 0.3s ease;
             font-weight: bold;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            flex-shrink: 0;
         }
 
         #yesBtn {
@@ -84,7 +84,7 @@
         #noBtn {
             background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
             color: #333;
-            position: absolute;
+            position: relative;
         }
 
         .hidden {
